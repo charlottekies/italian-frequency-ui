@@ -2,6 +2,7 @@
 # abort on errors
 set -e
 # build
+export API_BASE_URL=$BASE_URL
 npm run build
 # navigate into the build output directory
 cd dist
