@@ -2,7 +2,8 @@ const { defineConfig } = require("@vue/cli-service");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = defineConfig({
-  publicPath: process.env.NODE_ENV === "production" ? "/hello-world/" : "/",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/italian-frequency-ui/" : "/",
   transpileDependencies: true,
   configureWebpack: {
     plugins: [
