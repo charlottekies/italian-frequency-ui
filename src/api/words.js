@@ -14,5 +14,6 @@ const BASE_URL2 =
 /*eslint-enable */
 
 export function getWords() {
+  console.log(BASE_URL2);
   return fetch(BASE_URL2 + "/word").then((response) => response.json());
 }
