@@ -7,10 +7,7 @@ const BASE_URL =
     ? `${secret.BASE_URL}`
     : process.env.API_BASE_URL;
 
-const BASE_URL2 =
-  process.env.NODE_ENV === "production" && secret.BASE_URL
-    ? secret.BASE_URL
-    : process.env.API_BASE_URL;
+const BASE_URL2 = process.env.API_BASE_URL;
 /*eslint-enable */
 
 export function getWords() {
